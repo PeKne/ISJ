@@ -26,11 +26,8 @@ def second_task():
 
 def third_task():
     # what strings and how many times appeared in the eskymo list
-    wordfreq_eskymo = dict((word, eskymo.count(word)) for word in eskymo)) # vase reseni
-    print wordfreq_eskymo
+    wordfreq_eskymo = dict(((word, eskymo.count(word)) for word in eskymo)) # vase reseni
     # test
-
-    print ''.join(word+str(freq) for (word, freq) in wordfreq_eskymo.items())
     return ''.join(word+str(freq) for (word, freq) in wordfreq_eskymo.items()) == 'do2pre1du4za1'
 
 
